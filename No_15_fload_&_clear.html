@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Clear Alignment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova&display=swap" rel="stylesheet">
+    <style>
+        * {
+            /* This is use for sub classes */
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Bona Nova', serif;
+        }
+
+        .container {
+
+            width: 900px;
+
+            border: 4px solid blue;
+
+            margin: auto;
+
+            background-color: rgb(255, 170, 170);
+        }
+
+        .item {
+            border: 2px solid gray;
+            margin: 12px 30px;
+            padding: 10px 10px;
+            background-color: rgb(243, 224, 188);
+        }
+
+        #mobile {
+            float: left;
+            /* float command here float mobile id tag in left side. We can float tags in right or left side*/
+
+            width: 40%;
+        }
+
+        #computer {
+            float: right;
+            /* float */
+            width: 39%;
+
+        }
+
+        #laptop {
+
+            /* Due to float comman in computer and mobile the proble genereat in laptop so remove float we can use clear command  */
+
+            /* clear: both;  Clearing both side of float */
+
+            clear: both;
+
+            width: 90%;
+
+        }
+
+        p,
+        h3 {
+            /* text-align: right;
+            text-align: left;
+            text-align: center; */
+            text-align: justify;
+        }
+
+        h1 {
+            margin: 4px auto;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Tech Store</h1>
+
+        <div id="mobile" class="item">
+            <h3>Mobile</h3>
+            <p id="mobilepara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quis
+                quaerat porro! Hic eos magnam numquam doloremque porro! Cumque ipsa ducimus ad, quia natus a sapiente
+                consequuntur amet dignissimos voluptates?. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quod, minima dolorem. Quod iusto eum velit. Laboriosam consectetur exercitationem neque assumenda ipsam
+                laborum distinctio pariatur quaerat ea culpa. Sint expedita laudantium iusto eos sapiente vero!</p>
+
+        </div>
+        <div id="computer" class="item">
+            <h3>Computer</h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quis
+                quaerat porro! Hic eos magnam numquam doloremque porro! Cumque ipsa ducimus ad, quia natus a sapiente
+                consequuntur amet dignissimos voluptates? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+                doloribus sint voluptatibus, impedit temporibus quae hic, incidunt iste vitae amet facere! Veniam natus
+                possimus consectetur consequuntur maxime quasi praesentium aut.</p>
+
+        </div>
+        <div id="laptop" class="item">
+            <h3>Laptop</h3>
+            <p id="laptoppara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quis
+                quaerat porro! Hic eos magnam numquam doloremque porro! Cumque ipsa ducimus ad, quia natus a sapiente
+                consequuntur amet dignissimos voluptates? Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Saepe, itaque eligendi iure laboriosam voluptate sit soluta temporibus enim! Praesentium, eveniet. In
+                obcaecati accusamus nesciunt sapiente cum similique quidem neque dolorem.</p>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
