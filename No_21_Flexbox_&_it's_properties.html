@@ -1,0 +1,189 @@
+<!--            Flexbox:-
+                        It is one dimensional layout method for laying out items in rows or coloumns
+                    --- CSS flexbox is the better way to align items into container        
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox in CSS</title>
+    <style>
+        .box {
+            height: 400px;
+            width: 100%;
+            border: 2px solid black;
+            display: flex;
+            /* To initalize the flex value in the display property */
+            /* After applying this display property all the item come in same line */
+
+            /* ~~~~~~~~~~~~~~~~~~~~~~~> Flex properties for Box <~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+    /*--------------------------------> i) Flex-direction <--------------------------------- */
+
+            /* flex-direction: row; */
+            /* It's defalut value for */
+
+            /* flex-direction: column; */
+            /* Box set top to bottom on asscending order */
+
+            /* flex-direction: row-reverse; */
+            /* Box set left to right on reverse order */
+
+            /* flex-direction: column-reverse; */
+            /* Box set top to bottom on reverse order */
+            flex-direction: row;
+            /* above all the flex-dirction value is overwritte by these value */
+
+
+    /*---------------------------------> ii)Flex-warp:- <---------------------------------*/
+            /* In responiseness when we check the it's responiveness (try to bigger and smaller) at that time the boxes no wraping for that we use below property */
+
+
+
+            /* flex-wrap: nowrap; */
+            /* defalut value for the flex-warp */
+
+            /* flex-wrap: wrap; */
+            /* using these value of flex-wrap we can wrap the boxes */
+
+            /* flex-wrap: wrap-reverse; */
+            /* Wraping but in reverse order */
+
+
+    /* ---------------------------------> iii) Flex-flow <--------------------------------- */
+            /* flex-flow is the sort-cutoff using flex-directioin and flex-wrap in same command
+            Syntax:- flex-flow: (flex-dirction value) (flex-wrap value) */
+            /* flex-flow: row wrap; */
+
+
+
+
+    /* ------------------------------>iv)Justify-content:- <--------------------------------- */
+            /* It will justify the content in horizontal direction */
+
+
+            justify-content: center;
+            /* set the all the boxes in center,but not the center of parent */
+
+            /* justify-content: space-around; */
+            /* leave equal space between 2sides of parent and equal space each boxes */
+            /* boxes sapce is different when it leave the space of sides */
+
+            /* justify-content: space-between; */
+            /* Leave equal space between only each boxes not the side of parent */
+
+            /* justify-content: space-evenly; */
+            /* Leave equal space between each boxes as well as side of parent */
+
+
+
+
+    /* ---------------------------------> v)Align-items:- <--------------------------------- */
+            /* It will justify the content in vertical direction */
+
+
+            /* align-items: center; */
+            /* align all the boxes in center of the parent */
+
+            /* align-items: flex-start; */
+            /* Set all the box center at the top side of parent */
+
+            /* align-items: flex-end; */
+            /* Set all the box center at the bottom side of parent */
+
+            /* align-items: stretch; */
+            /* Generally strech you boxes */
+            /* when you use resoponsiveness to check this property you need to reduce the hegiht and width of the box (which is set by the item class) */
+
+        }
+
+        .item {
+            /* if we not set the height and width it set it's height and width according to the parent (in case parent is .box) */
+
+            height: 100px;
+            width: 100px;
+            background-color: tomato;
+            border: 2px solid blue;
+            margin: 5px;
+            padding: 5px;
+
+        }
+
+        /* ~~~~~~~~~~~~~~~~~~~~~~~> Flex properties for items <~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+        #item1 {
+
+    /* ---------------------------------> Order Property <--------------------------------- */
+            order: 3;
+            /* An heigher order , later it show up */
+
+
+/* ---------------------------------> Flex-gorw:- <--------------------------------- */
+        /* The flex-grow property specifies how much the item will grow relative to the rest of the flexible items inside the same container. */
+        
+            /* flex-grow: 2; */
+            /* this box grow fast compare to other boxes */
+
+        }
+
+        #item2 {
+            order: 1;
+
+/* ---------------------------------> Flex-shrink:- <--------------------------------- */
+/* The flex-shrink property specifies how much the item will shrink relative to the rest of the flexible items inside the same container. */
+
+            /* flex-shrink: 5;                 */
+            /* for use this propertis you need to not use the flex-wrap property */
+            /* this box shrink fast compare to other boxes */
+
+
+/* ---------------------------------> Flex-basis:- <--------------------------------- */
+            /* flex-basis: 260px; */
+            /* when flex-direction is set as the row value  flex-basis: will control width */
+
+            /* when flex-direction is set as the coloumn value  flex-basis: will control height */
+            /* Show the changes you need to set the bigger value of flex-basis comapre to box height and width value */
+            }
+
+        #item3 {
+            order: 4;
+/* ---------------------------------> Flex:- <--------------------------------- */
+
+            /* flex synatx :- (flex-grow value) (flex-shrink value) (flex-basis value)  */
+                                /* flex: 2 2 340px; */
+            /* It is combine command of flex-grow,flex-shrink and flex-basis */
+
+/* ---------------------------------> Align-self:- <--------------------------------- */
+
+                /* align-self: flex-start; */
+                /* The box is align on the starting of flex */
+                /* align-self: flex-end; */
+                /* The box is align on the bottom of the flex */
+                align-self: center;
+                /* The box is aligh on the center of the flex */
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Let's Start the learn about Flexbox</h1>
+    <div class="box">
+
+        <div class="item" id="item1">First box</div>
+        <div class="item" id="item2">Second box</div>
+        <div class="item" id="item3">Third box</div>
+        <!-- <div class="item" id="item4">Fourth box</div>
+        <div class="item" id="item5">Fifth box</div>
+        <div class="item" id="item6">Sixth box</div> -->
+
+    </div>
+</body>
+
+</html>

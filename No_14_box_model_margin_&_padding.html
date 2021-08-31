@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <style>
+
+        *{
+            box-sizing: border-box;
+            /* if we use this attribute our webpage width and height not changing with respect of margin and padding*/
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: yellow;
+        }
+        .containor{
+            color: #ac1e1e;
+            background-color: #27cc3b;
+            border: 2px solid black;
+
+            /* padding: 40px; */
+            /* margin: 40px; */
+
+            /* padding-left: 60px;
+            padding-right: 100px;
+            padding-top: 45px;
+            padding-bottom: 50px; */
+
+
+            /* margin-left: 60px;
+            margin-right: 100px;
+            margin-top: 45px;
+            margin-bottom: 50px; */
+
+            /* padding: 45px 10px 2px 90px;*/ /* padding: top right bottom left*/ 
+            /* margin: 45px 10px 2px 90px;*/ /* margin: top right bottom left*/ 
+
+            padding : 4px 5px; /* padding: y(top/bottom) x(right/left)*/
+            margin: 30px 50px; /* margin: y(top/bottom) x(right/left)*/
+            border-radius: 10px;
+            width: 400px;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="containor">
+    <h2>Learn about box model</h2>
+    <p id="first" >Lorem ipsum dolor sit amet consectetur adipisicing elit. A eveniet quos voluptates recusandae sequi consequatur iste placeat nesciunt ex aspernatur!</p>
+    </div>
+
+    <div class="containor">
+    <h2>Learn about box model</h2>
+    <p id="second" >Lorem ipsum dolor sit amet consectetur adipisicing elit. A eveniet quos voluptates recusandae sequi consequatur iste placeat nesciunt ex aspernatur!</p>
+    </div>
+
+    <div class="containor">
+    <h2>Learn about box model</h2>
+    <p id="Third" >Lorem ipsum dolor sit amet consectetur adipisicing elit. A eveniet quos voluptates recusandae sequi consequatur iste placeat nesciunt ex aspernatur!</p>
+    </div>
+    
+
+</body>
+</html>

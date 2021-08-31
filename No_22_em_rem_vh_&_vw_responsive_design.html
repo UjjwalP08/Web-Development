@@ -1,0 +1,87 @@
+<!----------------------- em,rem,vh and vw in responsive design ----------------------->
+<!-- 
+    A website is responsive when it adjust it's width and height according to the different screen and do that whole process automatically 
+
+            Various way to achive Responsive Design
+            
+            i) By using vh/vw/em/rem insted of using pixel(px)
+            ii) By using max-width and max-height
+            iii) By using Media query
+            iv) Setting up the view port
+            
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size units</title>
+    <style>
+        html{
+            font-size: 10px;
+        }
+        .container{
+            border: 2px solid red;
+            /* width: 600px; */
+            /* if you want to set your webpage width to whole page directly that time you need to use vw attribut */
+
+            /* ---------------------> vw use <--------------------- */
+
+            width: 98vw;
+
+            /* height: 500px;
+            if you want to set your webpage hegiht to whole page directly that time you need to use vw attribut */
+
+            /* ---------------------> vh use <--------------------- */
+
+            height: 100vh;
+
+            font-size: 10px;
+        }
+        h1{
+            text-align: center;
+        }
+        #box1{
+
+                        /* ---------------------> em use <--------------------- */
+
+            /* When you want the font size which is depend on its parent font-size (in this case container is parent) that case you use the em size*/
+            
+            /* font-size: 3em; */
+            /* mean the triple font size of the parent means 3*10 = 30px */
+
+            /* padding: 3em; */
+            /* here padding set the triple of the font-size of box1 that is 3*3*10 = 90px */
+        }
+
+        #box2{
+                        /* ---------------------> rem use <--------------------- */
+
+            /* When you want to set your whole webpage same at that time we use the rem size */
+
+            font-size: 5rem;
+            /* resizing reletive to the html font size */
+            /* rem always set the size with the reference of the html font size */
+            /* here out html font size is 10px so our box2 id font-size is 5*10 = 50px */
+
+            padding: 6rem;
+            /* resizing reletive to the html font size */
+            /* rem always set the size with the reference of the html font size */
+            /* here our padding is 6*10 = 60px */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1 id="box1">This is the first heading</h1>
+        <h1 id="box2">This is the second heading</h1>
+        <h1 id="box3">This is the third heading </h1>
+    </div>
+</body>
+
+</html>

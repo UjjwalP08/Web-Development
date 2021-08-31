@@ -1,0 +1,68 @@
+                                    <!-- Transition in CSS -->
+                                    
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition in CSS</title>
+    <style>
+      body{
+          background-color: black;
+      }
+
+        #box {
+            display: flex;
+            justify-content: center;
+            width: 250px;
+            height: 250px;
+            background-color: cadetblue;
+            border: 2px solid red;
+            align-items: center;
+
+            /* transition-property: background-color; */
+            /* It indicate for which property you want to add transition */
+
+            /* transition-duration: 1s; */
+            /* Total time taken for th transition duration */
+
+            /* transition-timing-function: ease-in-out; */
+            /* Same as work as the animation-timing-function  work */
+
+            /* transition-delay: 2s; */
+            /* After how much time transition apply in css */
+
+            /* all above transition function in single command */
+            /* Syntax:- transition: property_name time-duration timing-function delay */
+            
+            /* transition: all 3s ease-in-out 1s; */
+            /* Here we applying transition for all the property */
+            
+            transition: all 1s ease-in-out ;
+
+
+        }
+        #box:hover{
+            width: 350px;
+            height: 350px;
+            border-radius: 100px;
+            background-color: orange;
+            color: white;
+            border:2px solid aqua;
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="box">
+            Box
+        </div>
+    </div>
+</body>
+
+</html>

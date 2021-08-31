@@ -1,0 +1,8 @@
+In HTML:-
+	rowspan
+	colspan
+	frames
+	meta tag
+	abbr
+	blackquote
+strike, mark, big, small, q, blockquote, abbr, bdo, code, var, img and meta.

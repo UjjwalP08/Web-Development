@@ -1,0 +1,114 @@
+<!-- Here we learn about how to convert inline/block element into inline/block element
+    In block element we can chagne width but in inline element we can't change a width
+    In inline element margin is not directly work first you need convert inline elemetn into block element then you able to us margin for that we use display in css
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Properties</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        header {
+
+            margin: auto;
+            border: 2px solid blue;
+            width: 1200px;
+        }
+
+        img {
+
+            margin: auto;
+            width: 34px;
+            display: block;
+             /*Img tag is inline element so using display property we chagne it inline to block*/
+            /* You can't set the width of inline element that why we use display property to change it */
+
+        }
+
+        h3 {
+            color: red;
+            font-family: cursive;
+            margin: 0px;
+            text-align: center;
+
+        }
+
+        .container {
+            width: 1200px;
+            margin: auto;
+        }
+
+        .box {
+            padding: 15px;
+            margin: 5px 0px;
+            border: 3px solid red;
+            background-color: gray;
+            display: inline-block;
+             /* Using inline-block elment property our element are inline as well as we can chage it's length */
+            width: 33%;
+            box-sizing: border-box;
+            /* box-sixing border-box is use for to set the width which is you set in css if you not use this margin or padding change your width */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- <header class="meta"> -->
+
+    <!-- <img src="https://www.codewithharry.com/assets/img/logo.png" alt="No Image">  -->
+
+    <!-- Image tag is Inline elemnt or its display is cover line -->
+    <!-- To check this open your html file in browser and right click any where an open inspect and click it and using mouse you can check that your image is inline element  -->
+
+    <!-- In inline element we can't chagne it width   -->
+
+    <!-- <h3>Welcome to My bro's blog</h3> -->
+
+    <!-- H3 is block element or its display is cover whole block -->
+    <!-- Block element we can set the width of our element -->
+
+    </header>
+    <header class="meta">
+
+        <img src="https://www.codewithharry.com/assets/img/logo.png" alt="No Image">
+
+        <h3>Welcome to My bro's blog</h3>
+
+    </header>
+
+    <div class="container">
+        <div class="box">
+            <h4>This is my contin</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, aut incidunt! Accusamus error repellat
+                sed voluptate enim, necessitatibus corporis recusandae libero. Quo libero voluptates necessitatibus
+                quidem, tempore nulla dolores, sint aliquam rerum corporis ex ut laudantium blanditiis dicta in, rem
+                unde at? Reprehenderit, nulla.</p>
+        </div>
+        <div class="box">
+            <h4>This is my contin</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, aut incidunt! Accusamus error repellat
+                sed voluptate enim, necessitatibus corporis recusandae libero. Quo libero voluptates necessitatibus
+                quidem, tempore nulla dolores, sint aliquam rerum corporis ex ut laudantium blanditiis dicta in, rem
+                unde at? Reprehenderit, nulla.</p>
+        </div>
+        <div class="box">
+            <h4>This is my contin</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, aut incidunt! Accusamus error repellat
+                sed voluptate enim, necessitatibus corporis recusandae libero. Quo libero voluptates necessitatibus
+                quidem, tempore nulla dolores, sint aliquam rerum corporis ex ut laudantium blanditiis dicta in, rem
+                unde at? Reprehenderit, nulla.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

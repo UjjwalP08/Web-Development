@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions in CSS</title>
+</head>
+<style>
+    .conationer{
+        border: 2px solid black;
+        background-color: khaki;
+        height: 3300px;
+        width: 3300px;
+    }
+.meta{
+    border: 2px solid blue;
+    width: 100px;
+    height: 100px;
+    margin: 4px;
+    display: inline-block;
+
+}
+            /*  In css there is generally these type of position 
+                static(default),relative,absolute,sticky,fixed   */
+#box2{
+    position:absolute;
+    /* absolute:Change Positions the element relative to the positon of its first parent */
+    /* Here we use the pareant as conationer class in body that you saw in our code */
+    /* IN simple word we can if element use a absolute position it can change it's position according to only it's parent and here as parent we can use conationer class  */
+    /* if we don't want to gap at our old/normal position that time we use absolute position */
+    top: 50px;
+    left: 50px;
+}
+#box4{
+    
+    position: relative;
+    /* relative: Change Position the element relative to its normal/old positon  and will leave a gap at its normal/old position */
+    /* In simple word we can say if element use a relative position it can chagne it's posiotion according to the webpage*/
+    /* The main benifit to use realtive positon is we are now able to use top,bottom,left,right properties */
+    top: 50px;
+}
+#box5{
+    position: sticky;
+    /* In sticky position we not set or occupy the space the element only stick where the window is scroll */
+
+    top: 10px;
+    left :10px;
+    /* It means box 5 is stick at top  so when we scroll down you show that box to stick in top*/
+    /* Generally sticky position we use to stick the menu at top while the scrolling on webpage */
+}
+#box6{
+    position: fixed;
+    /* In fixed positon if we set it top or bottom it is fixed for that positon and occupy that space */
+
+    bottom: 10px;
+    right: 5px;
+    /* It means fixe at top to 10px */
+    /* Genereally fixed position we use to make chat box at the bottome end */
+}
+</style>
+<body>
+    <!-- In css there is generally these type of position 
+    static(default),relative,absolute,sticky,fixed  -->
+<div class="conationer">
+
+    <div id="box1" class="meta">1</div>
+    <div id="box2" class="meta">2</div>
+    <div id="box3" class="meta">3</div>
+    <div id="box4" class="meta">4</div>
+    <div id="box5" class="meta">For Menu</div>
+    <div id="box6" class="meta">Use for Chat</div>
+</div>
+</body>
+</html>

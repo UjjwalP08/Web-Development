@@ -1,0 +1,75 @@
+                                    <!--    More Selector On CSS   -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        h1{
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+    
+
+            /* -----------------------> CSS Selector <----------------------- */
+
+     /* div p */
+    /* It means apply this css to p tag that you find inside the any div tag */
+     /* {
+        background-color: tomato;
+        color: blue;
+    }  */
+
+
+            /* -----------------------> CSS Selector    <----------------------- */
+
+    /* div ul p
+    /* It means apply this css only on that p tag which you find inside ul tag and that ul tag must be inside of the div tag  */
+    /* {
+
+        background-color: brown;
+        color: chartreuse;
+    } */ 
+
+            /* -----------------------> CSS Selector <----------------------- */
+
+    div > p
+    /* This is css apply only the div tag direct child which is p */
+    /* means only apply in that p tag which is only inside at the only in div tag */
+    /* this css not apply at the p tag which is inside the ul tag */
+    {
+        background-color: chocolate;
+        color: crimson;
+    }
+
+            /* -----------------------> CSS Selector <----------------------- */
+
+    div + p
+    /* This is css only apply that p tag which is after completion of div tag  */
+    /* for other p tag this css not apply  */
+    {
+        background-color: black;
+        color: chartreuse;
+    }
+    </style>
+</head>
+<body>
+    <h1>This is about New CSS selectors</h1>
+    <div class="container">
+        <div class="box">
+            <p>This is the our box class paragrph</p>
+            <ul>
+                <li>
+                    <p>This is our paragraph which is inside the unordered list</p>
+                </li>
+            </ul>
+        </div>
+        <p>This is our paragraph whichis inside the container class</p>
+    </div>
+    <p>This is our most outter paragraph </p>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+
+    <!-- CSS follow precedenc so first precedence going to the Inline css
+    
+        after that if we write first external so it has highest precedence between internal and external
+
+        and if we write internla css first so it has highest precedence between interal and external css
+
+        and if your wish is external not overwrite internal css so simplay use important like
+
+        !important
+    -->
+
+    <!-- This is External CSS -->
+    <link rel="stylesheet" href="u.css">
+
+    <!-- This is Internal CSS -->
+
+    <style>
+        p {
+            color: rgb(255, 115, 0);
+            background-color: rgb(14, 11, 184) !important;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h2>In this webpage we learn about css and it's type</h2>
+
+    <!-- we can implement CSS three ways 
+    i)   Inline CSS
+    ii)  Internal CSS
+    iii) External CSS
+    
+    -->
+
+    <!-- This is the Inline css -->
+    <p style="color: rgba(12, 202, 53, 0.884); background-color: rgb(255, 81, 0);">Let's get start to learn about inline css</p>
+
+    <p>Let's get start to learn about Internal CSS</p>
+
+    <p>Let's get start to learn about External CSS </p>
+
+</body>
+
+</html>
