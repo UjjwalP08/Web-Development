@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid and Media Query</title>
+    <style>
+        .container {
+
+            display: grid;
+            grid-gap: 1rem;
+
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer';
+
+
+        }
+
+        .box {
+            border: 2px solid black;
+            padding: 10px;
+
+        }
+
+        @media(max-width:425px) {
+            body {
+
+                background-color: red;
+            }
+
+            .container {
+
+                display: grid;
+                grid-gap: 1rem;
+
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+
+
+            }
+
+            aside {
+                display: none;
+                /* Hide the aside part in webpage */
+            }
+
+            nav {
+                text-align: center;
+                /* Centering the elements of navigation menu */
+            }
+
+            span {
+                padding: 2px;
+            }
+        }
+
+        @media (min-width:425px) and (max-width:768px) {
+            body {
+
+                background-color: yellow;
+            }
+
+            .container {
+
+                display: grid;
+                grid-gap: 1rem;
+
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+
+
+            }
+
+            aside {
+                display: none;
+                /* Hide the aside part in webpage */
+            }
+
+            nav {
+                text-align: center;
+                /* Centering the elements of navigation menu */
+            }
+
+            span {
+                padding: 10px;
+            }
+        }
+
+        @media only screen and (min-width :768px) and (max-width:1024px) {
+            body {
+
+                background-color: green;
+            }
+
+            .container {
+
+                display: grid;
+                grid-gap: 1rem;
+
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+
+
+            }
+
+            nav {
+                text-align: center;
+                /* Centering the elements of navigation menu */
+            }
+
+            span {
+                padding: 10px;
+            }
+        }
+
+        @media (min-width:1024px) {
+            body {
+
+                background-color: blue;
+            }
+
+            .container {
+
+                display: grid;
+                grid-gap: 1rem;
+
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section aside'
+                    'footer footer footer footer';
+
+
+            }
+
+            span {
+                padding: 20px;
+            }
+        }
+
+        nav {
+            grid-area: navbar;
+            background-color: honeydew;
+
+        }
+
+        section {
+            grid-area: section;
+            background-color: honeydew;
+
+        }
+
+        aside {
+            grid-area: aside;
+            background-color: honeydew;
+
+        }
+
+        footer {
+            grid-area: footer;
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="box">
+            <span>Home</span>
+            <span>About Us</span>
+            <span>Contact Us</span>
+            <span>Clients</span>
+        </nav>
+
+        <section class="box">
+            <h2>This Our Main content</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum libero illum impedit, architecto magni id
+                soluta cum corrupti, sed ab consectetur autem, quidem officiis repudiandae alias aliquid beatae fugiat
+                sapiente. Distinctio, maiores. Laborum dolore quibusdam illo, quod earum excepturi libero pariatur,
+                atque labore sapiente soluta debitis. Quas officia fugit perferendis. Velit necessitatibus cum tempore
+                odio iure explicabo unde dolores laudantium eaque hic commodi animi modi laboriosam ipsam nesciunt
+                cumque error consectetur, ducimus harum, numquam maxime quae debitis. Dignissimos culpa accusantium
+                magni at a ab. Voluptatum quas nihil maiores quod temporibus est unde nobis ipsam modi recusandae,
+                natus, alias dolore laboriosam molestiae possimus optio provident. Molestias molestiae ducimus nisi
+                deserunt a voluptas tempore aliquam commodi nostrum nihil obcaecati praesentium impedit odio nam saepe
+                totam dicta explicabo ab, quae qui vero, sed consequatur accusantium quis. Aliquam praesentium accusamus
+                aut? Mollitia quas perferendis nam, officiis atque odio iure est ipsum nostrum itaque eligendi
+                voluptates laborum iusto laboriosam quaerat quibusdam corporis! Est sit laudantium impedit beatae dicta
+                ullam dolore consequatur voluptatum. Ratione eaque nisi voluptate dolore natus fugit, ipsum iure
+                obcaecati. Alias atque incidunt veniam reprehenderit odit dicta, ex beatae laboriosam, laudantium
+                aliquid quas repellat consectetur accusamus iste placeat exercitationem maxime sint, voluptatibus iure.
+            </p>
+        </section>
+        <aside class="box">
+            <h1>Our Clients</h1>
+        </aside>
+
+        <footer class="box">CopyRight &copy; By Ujjwal Patel</footer>
+    </div>
+
+</body>
+
+</html>

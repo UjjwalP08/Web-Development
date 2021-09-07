@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Spanning</title>
+    <style>
+        .container{
+            display: grid;
+            /* Making the Display grid */
+
+            
+            grid-template-columns: repeat(4,2fr);
+            
+            grid-template-rows: repeat(3,2fr);
+            /* Make 5rows of the 1/2part of its actual width */
+
+            /* grid-column-gap: 7rem; for column gap
+            grid-row-gap: 1rem;  for row gap*/
+
+            grid-gap: 2rem;
+        }
+        .box{
+            background-color: rosybrown;
+            border: 2px solid black;
+            padding: 10px;
+        }
+
+        .box:first-child{
+            grid-column-start: 1;
+            grid-column-end: 4;
+            
+            /* spanning the column 1 to column 4 means combine column1 and column4 */
+
+            grid-row-start: 1;
+            grid-row-end: 4;
+            
+            /* spanning the row 1 to row 4 means combine row 2 and row 4 */
+
+            /* grid-column-start: 1;
+            grid-column-end: 4; */
+            /* Above code short cut is */
+            
+            
+            grid-column: 1 / span 3;
+            /* Above code means it start with coulmn 1 and sapn 3 columns */
+            /* for undersatnign the first span column is the column which number is given that himself and then move froward sequentially */
+
+
+            /* grid-row-start: 1;
+            grid-row-end: 4; */
+            /* Above code short-cut is */
+            grid-row: 1 / span 2;
+            /* Above code means it start with 1st row and sapn 2 rows  */
+            /* for undersatnign the first span row is the row which number is given that himself and then move froward sequentially */
+            
+            
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Item-1</div>
+        <div class="box">Item-2</div>
+        <div class="box">Item-3</div>
+        <div class="box">Item-4</div>
+        <div class="box">Item-5</div>
+        <div class="box">Item-6</div>
+        <div class="box">Item-7</div>
+        <div class="box">Item-8</div>
+        <div class="box">Item-9</div>
+        <div class="box">Item-10</div>
+        <div class="box">Item-11</div>
+        <div class="box">Item-12</div>
+        <div class="box">Item-13</div>
+        <div class="box">Item-14</div>
+        <div class="box">Item-15</div>
+        <div class="box">Item-16</div>
+        <div class="box">Item-17</div>
+        <div class="box">Item-18</div>
+        <div class="box">Item-19</div>
+        <div class="box">Item-20</div>
+    </div>
+</body>
+</html>

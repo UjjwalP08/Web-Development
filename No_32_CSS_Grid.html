@@ -1,0 +1,67 @@
+                                            <!-- Learn about CSS Grid -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container{
+            display: grid;
+            /* CSS grids are the display properties that allow us to transform any box into the grid */
+            /* When we make this container grid the item class which is inside it also going to turn in Grid */
+            /* We generally use the grid for to make 2d layout */
+            
+            
+            /* grid-template-columns: 400px 300px 200px; */
+            /* Here we divide our grid in three coulumns giving the 3 values  */
+            /* Then first column width is 400px second's 300px and the third width is 200px */
+            /* if we give 4value of width it divde in the 4 columns */
+
+            grid-template-columns: 2fr 5fr 2fr;
+            /* this code divde the columns width in the fraction */
+            /* The above code means from the whole width, give 2 part to the first item, 5 parts to the second item, and again 2 part to the last item */
+            /* Like we divide item width in 2:5:2 ratio */
+            
+            /* grid-template-columns: repeat(4,150px); */
+            /* grid-template-columns: repeat(no of columsn,width); */
+            /* using the repeat we divide grid in the same width of multiple columns  */
+            
+            grid-gap: 2rem;
+            /* Above code is use for the provide the gap between columns */
+            
+            grid-template-rows: 1fr 3fr 6fr;
+            /* This value only for the first 3 rows for the other rows(4,5,6....n) them width is 1fr bydefalut */
+
+            /* grid-template-rows: repeat(3,2fr); */
+            /* grid-template-columns: repeat(no of rows,width); */
+            /* We apply this for 3 rows and each row width is 2 part of the whole width */
+
+        }
+        .item{
+            /* height: 100px;
+            width: 100px; */
+            border: 2px solid black;
+            background-color: red;
+            /* margin: 3px; */
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">this is item-1</div>
+        <div class="item">this is item-2</div>
+        <div class="item">this is item-3</div>
+        <div class="item">this is item-4</div>
+        <div class="item">this is item-5</div>
+        <div class="item">this is item-6</div>
+        <div class="item">this is item-7</div>
+        <div class="item">this is item-8</div>
+        <div class="item">this is item-9</div>
+        <div class="item">this is item-10</div>
+    </div>
+</body>
+</html>

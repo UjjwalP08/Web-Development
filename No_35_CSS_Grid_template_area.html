@@ -1,0 +1,72 @@
+                        <!-- Here using thr CSS Grid we create a basic layout of the Website  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Grid</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+
+            /* in Grid-template-area A row should contain the same number of columns as you show below in code */
+            grid-template-areas: 
+            'navbar navbar navbar navbar'  /* This is row contain 4 number of columns*/
+            /* all the part for the navbar */
+            'section section section aside' /* This is row contain 4 number of columns*/
+            /* First three part for the section and last one for the aside */
+            'footer footer footer footer'; /* This is row contain 4 number of columns*/
+            /* All the part for the footer*/
+
+            /* For above code we create the matrix which has 3rows and 4columns  */
+        }
+        .box{
+            border: 2px solid black;
+            background-color: cadetblue;
+            padding: 10px;
+        }
+        #navbar{
+            
+            grid-area: navbar;
+        
+        }
+        #section{
+            grid-area: section;
+        }
+        #aside{
+            grid-area: aside;
+        }
+        footer{
+        grid-area: footer;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="navbar" class="box">
+            Home About Contact Us 
+        </div>
+        <div id="section" class="box">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint doloremque praesentium debitis placeat atque
+            nobis odit nihil facilis dolorum, quae, modi, cum maxime quod obcaecati. Saepe cum quasi hic quis nemo ad
+            expedita, nihil obcaecati ex unde repellat, dicta neque ut voluptates, asperiores in provident perspiciatis
+            incidunt dolore nulla enim et sed modi! Non eum, quos reprehenderit suscipit nemo optio distinctio error
+            totam quibusdam atque nostrum. Ipsam, tenetur ad. Undo Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse ipsam repellendus, neque illum dignissimos minus optio enim fuga ex odio est veritatis ut a deserunt adipisci? Ea, quos, eligendi repellendus labore quae in necessitatibus minus cumque magni ex ad doloribus provident ducimus ipsa maiores laboriosam quia itaque nemo minima? Nihil error a aperiam pariatur sed eaque nulla placeat? Nobis omnis adipisci unde nihil? Tempore vitae consequuntur labore, hic eius dolorem, at dolor commodi minus id earum nam doloremque reprehenderit voluptatem ut magnam deserunt qui recusandae tenetur voluptatum blanditiis quos. Explicabo eligendi sunt, praesentium vel dolorem corporis repellat atque eius corrupti.
+        </div>
+        <div id="aside" class="box">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil asperiores fugiat dolor iusto aut quae sunt
+            tempore voluptates doloribus ut repudiandae vero, qui reprehenderit quis ab! Incidunt itaque ratione saepe,
+            ut molestiae illum quisquam laborum impedit. Tempora fuga, repudiandae laborum repellendus rem sunt deserunt
+            dicta! Architecto perferendis nemo excepturi quas?
+        </div>
+        <footer class="box">
+            This is the our footer
+        </footer>
+    </div>
+</body>
+
+</html>
