@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope if-else & switch in Java-Script</title>
+</head>
+
+<body>
+    <div>
+        <ul>
+            <li>This is Item-1</li>
+            <li>This is Item-2</li>
+            <li>This is Item-3</li>
+            <li>This is Item-4</li>
+            <li>This is Item-5</li>
+            <li>This is Item-6</li>
+            <li>This is Item-7</li>
+            <li>This is Item-8</li>
+            <li>This is Item-9</li>
+            <li>This is Item-10</li>
+        </ul>
+    </div>
+    <script>
+        var string = "This is string1";
+        var string = "This is string2";
+        console.log(string)
+        // Using the var keyword we are initlaize our variable more than time as you show in above code
+        // Var generally declare the globally
+        // We generally need the variable that his scope is limited not the global
+
+        // For that we use the let keyword before decalre our variable 
+        // Or Now we use the let insted of using var keyword for variable declaring
+
+        let a = "This is our String Number 1 ";
+        console.log(a);
+        // let a = "This is our String Number 2 ";
+        // Now we are not initalize same variable if we use the let keyword
+
+        // Constant in JS
+
+        const pi = 3.14; // This is now constatnt we can't chagne pi value
+        // pi = 22/7; if we uncomment it so our code generate an error
+        console.log(pi);
+
+        let age = 20;
+        // age = 6;
+        if (age > 18) {
+            console.log("You are now able drive to your own Vehicle");
+        }
+        else {
+            console.log("You Still not drive your own Vehicle")
+        }
+
+        let day_no = 4;
+
+        switch (day_no) {
+            case 1:
+                console.log("Monday");
+                break;
+
+            case 2:
+                console.log("Tuesday");
+                break;
+
+            case 3:
+                console.log("Wednesday");
+                break;
+            
+            case 4:
+                console.log("Thrusday");
+                break;
+            
+            case 5:
+                console.log("Friday");
+                break;
+
+            case 6:
+                console.log("Saturday")
+
+            default:
+                console.log("Sunday");
+                break;
+        }
+
+    </script>
+</body>
+
+</html>

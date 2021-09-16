@@ -1,0 +1,59 @@
+                            <!-- String in Java-Script -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String in Java-Script</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>This is Our Heading</h1>
+            <div id="content">
+
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi at a nobis recusandae nesciunt iusto minus! Ipsum earum iusto dolores aperiam asperiores consectetur, reiciendis voluptates provident minima. Ex consequatur eaque voluptates fuga, facilis sunt repudiandae sed asperiores dicta doloremque vitae dolore tempora sapiente accusamus esse iusto. Molestiae libero et vel.</p>
+        </div>  
+    </div>
+    <script>
+        // String in JS
+        
+        var str = "This is our 'first' string ";
+        console.log(str);
+        // We can Decalre string in single qutoes or double qutoes
+        var str2 = 'This is our "second" string';
+        console.log(str2);
+
+        // When we want to use double quotes in our string we decalre our string in single qutoes and when we want to use single quote in our string we decalre our string in double quotes
+        
+        console.log(str + str2);
+        // Here + is our concating operator which is used to join the two strinngs
+
+        var name = "Ujjwal";
+
+        var acc="github.com/Ujjwal087"
+
+        var temp = `${name} person github account is ${acc}`;
+        // Template literal
+        console.log(temp);
+
+        var len = name.length;
+        // Syntax:-  var variable_name = variable_name.length
+
+        console.log(len);
+
+        // Escape sequence Characters(\n \t \b \\)
+
+        console.log("Hello \nNameste\tHow are You???\tand add backslash we need to use two backslash \\");
+
+        var str = new String("Hey") // Making string using string constructors
+        console.log(str);
+
+        document.getElementById('content').innerHTML = '<h2> Using this we can add our text in content id</h2>'
+        // Using this we can insert our string dynmically where our id = 'content'
+
+    </script>
+</body>
+</html>
