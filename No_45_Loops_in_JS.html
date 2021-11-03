@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops in HTML</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Let's leran about Loops in Java-script</h1>
+    </div>
+    <script>
+        // while Loop
+        // syntax:- while(condition)
+        // {
+        //  Code;
+        // condition(increment or decrement)
+        // }
+
+        // While code
+        // let i=0;
+        // while (i<6) {
+
+        //     console.log(i);
+        //     i++;
+        // }
+
+
+
+
+
+
+        // do while:only in do_while loop first loop is executed then check the condition
+        // Syntax:-
+        // do
+        // {
+        //     code;
+        //     increment or decrement condition
+
+        // }while(condition);
+
+
+        // Do_while loop code
+        // let i=0;
+        // do{
+
+        //     console.log(i);
+        //     i++
+
+        // }while(i<5);
+
+
+
+
+
+
+        // For loop
+        // Syntax:- for(initalization;condition;increment or decrement)
+        //              {
+        //                      code;
+        //              }
+
+
+        let friends = ["Meet", "Harmin", "kiratn", "Suchivrat"];
+
+        // for loop code
+        // for (let i = 0; i < friends.length; i++) {
+
+
+        //     console.log("Welcome to my friend "+ friends[i] +" old java-script world");
+
+        // }
+
+
+
+
+
+        // For_each loop
+        // Syntax:- array_name.forEach()
+        //          {
+        //              code;
+        //          });
+
+        // For_each loop code
+        // friends.forEach(function frd(element) {
+
+        //     console.log("Welcome to my friend "+ element +" mordern java-script world");
+
+        // });
+
+
+
+
+        // for_of loop
+        // Syntax:- for(any_name of array_name)
+        //              {
+        //                  console.log(any_name) this code print all elements of array
+        //              }
+
+
+        // for_of loop code
+        // for (elements of friends) {
+
+        //     console.log("Welcome to my friend "+ elements +" latest java-script world");
+
+
+        // }
+
+        // for_in loop :- if you want to iterate an object we use for_in loop
+        // Syntax:- for(variable_name in object_name)
+        // {
+        // code;
+        // }
+
+        let empolyee = {
+            name: "Ujjwal Patel",
+            status: "Student",            //it is an object
+            Branch: "It"
+        }
+
+        // for_in loop code
+        for (key in empolyee) {
+            console.log(`The ${key} of employee is ${empolyee[key]}`)
+        }
+
+
+
+
+
+    </script>
+</body>
+
+</html>

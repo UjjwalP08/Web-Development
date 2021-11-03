@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert,Prompt and Confirm</title>
+</head>
+
+<body>
+    <div>
+        <ul>
+            <li>Item-1</li>
+            <li>Item-2</li>
+            <li>Item-3</li>
+            <li>Item-4</li>
+            <li>Item-5</li>
+            <li>Item-6</li>
+            <li>Item-7</li>
+            <li>Item-8</li>
+            <li>Item-9</li>
+            <li>Item-10</li>
+        </ul>
+    </div>
+    <script>
+
+
+        // alert:- When you want to show some message in that case we use the alert
+        // alert take string as the argruments and return nothing
+
+        // alert code
+        // alert("This is the alert box which you use in Java-script");
+
+        // Until you not press ok you can't do anything in your webpage
+
+
+        // Prompt:- When you want to enter input from user in that case we use prompt
+        // it take input from user and then we stroe the value in variable
+        // Syntax:- prompt(message string,default string)
+        // some case if you don't give default strign you script still working
+
+        // prompt code
+        // let name = prompt("Enter you name","Guest")
+        // console.log(name);
+
+        // let name1 = prompt("Enter Your name again");
+        // console.log(name1)
+
+        // Confirm:- when you want ot confirm something in that case we use confirm
+
+        // confirm code
+
+        // let deletepost = confirm("Do you really want to Delete this post or not");
+
+        // if(deletepost)
+        // {
+        //     console.log("Your Post is deleted");
+        //     alert("Your Post is deleted");
+        // }
+        // else{
+        //     console.log("Your post is not deleted")
+        //     alert("Your Post is not deletd");
+        // }
+
+        // Example or Question
+        // take the input as the user age and display user is adult if user age is grater than 18
+        // display user is not adult if the age less than 18
+
+        let age = prompt("Enter you age");
+
+        if (age > 18) {
+            console.log("You are adult is show in console");
+            alert("You are adult");
+
+        }
+        else {
+            console.log("You are not adult is show in console");
+            alert("You are not adult");
+        }
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

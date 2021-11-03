@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM in HTML</title>
+</head>
+
+<body>
+    <div id="main" class="container">
+        <li>item-1</li>
+        <li>item-2</li>
+        <li>item-3</li>
+        <li>item-4</li>
+        <li>item-5</li>
+
+    </div>
+
+    <div class="container">
+        <p>Another container</p>
+    </div>
+
+    <script>
+
+        // To chagne the value in side the container class
+        let cls = document.getElementsByClassName('container');
+        console.log(cls);
+
+        // To chagne the value in side the main id
+        let id = document.getElementById('main');
+        console.log(id);
+
+        // To target the css selector we use below command
+        let qu1 = document.querySelector('.container');
+        // This commnad only return first element of the container class
+        console.log(qu1);
+
+        let q2 = document.querySelectorAll('.container');
+        // This commnad  return all element of the container class
+        console.log(q2);
+
+        let q3 = document.querySelectorAll('#main>li');
+        console.log(q3);
+
+        // to change the elements is console
+        // Syntax:-  variable_name[index_valu].innerHTML = "string";
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!-- Events:- when you clikc or when you move mouse pointer around your screen some animation happen that is known as events -->
+<!-- Events listeing is the function we use perfome different type of the events -->
+<!-- Types of Events:-  
+                        Onchange-  An HTML element has been changed
+                        Onclick- The user clicks an HTML element
+                        Onmouseover-   The user moves the mouse over an HTML element
+                        Onmouseout-The user moves the mouse away from an HTML element
+                        Onkeydown- The user pushes a keyboard key
+                        Onload- The browser has finished loading the page
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in HTML</title>
+    <style>
+        #btn {
+            padding: 4px 6px;
+            color: white;
+            background-color: black;
+            border: 2px solid green;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>This is My Info</h1>
+        <p id="para" class="cont">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam blanditiis quos, minima, provident,
+            temporibus dolore quasi delectus doloremque dolorum sit accusantium ullam porro sunt? Dolorum fuga quos
+            molestias vero, quibusdam porro! Alias provident, itaque similique quia, suscipit explicabo asperiores
+            quidem expedita minima sit pariatur natus aspernatur. Alias quae fugit, necessitatibus placeat repudiandae
+            doloribus aliquam tenetur aut nihil vero fugiat perspiciatis, pariatur sunt nostrum eum maxime nemo quaerat
+            maiores similique laudantium culpa quibusdam! Mollitia reprehenderit perspiciatis dignissimos ut voluptatem.
+            Sint ad inventore, doloremque pariatur dicta quos accusamus, incidunt aliquam vitae fugiat a! Officia
+            aspernatur hic pariatur aut quasi facilis soluta error. Autem quam numquam vel. Aliquam, debitis
+            consequuntur? Modi unde, quas quae aspernatur corrupti quis in, mollitia sunt exercitationem aperiam earum
+            eius laboriosam voluptate dolor, voluptates sint maxime repellat beatae adipisci? Quasi ducimus iusto odit
+            explicabo illo facilis ipsam iste animi dolor adipisci vero itaque beatae dolorem optio laborum et ratione
+            inventore cum aut corporis fugiat, facere, sed deleniti! Molestias quos voluptatum, ipsa quae autem
+            distinctio quis aut repellendus dignissimos nemo rerum dicta provident ab libero deserunt porro architecto
+            corrupti ducimus a quas repudiandae officiis ratione temporibus amet. Velit, ratione recusandae eos cumque
+            hic voluptas possimus, quasi dolorum sed numquam odio omnis dolorem autem nostrum! Perferendis, maxime
+            voluptatem doloremque rerum labore omnis aliquam impedit sit odio placeat cum non cupiditate dignissimos.
+            Doloremque, amet. Perspiciatis alias vel quasi, unde blanditiis nam facere?
+        </p>
+        <button id="btn" onclick="hide()">Show/Hide</button>
+        <!-- Hide is the function when we click on the button it show its effect -->
+
+    </div>
+    <script>
+
+        let para = document.getElementById('para');
+        // Use of eventlistner
+
+        // Syntax
+        // id_variable_name.addEventListener('event_name',function()
+        // {
+
+        // });
+
+        para.addEventListener('mouseover',function run(){
+
+            console.log('mouse is inside');
+        });
+        para.addEventListener('mouseout',function run(){
+
+            console.log('mouse is outside');
+        });
+
+
+
+        function hide() {
+
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('para');
+
+            if (para.style.display != 'none')
+            //  Condition to hide the data 
+            {
+                //  if true then hide the data
+                para.style.display = 'none';
+            }
+            else {
+                //  if false the show the data
+
+                para.style.display = 'block';
+
+            }
+        }
+
+    </script>
+</body>
+
+</html>
